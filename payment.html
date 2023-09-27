@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f7f7f7;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			border-radius: 10px;
+			overflow: hidden;
+		}
+		h1, h2 {
+			text-align: center;
+			margin-top: 0;
+			color: #007bff;
+			font-weight: bold;
+			text-shadow: 2px 2px #ccc;
+		}
+		h2 {
+			font-size: 1.5rem;
+			margin-bottom: 20px;
+		}
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		li {
+			margin: 20px 0;
+			padding: 20px;
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+			transition: all 0.3s ease;
+		}
+		li:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+		}
+		h3 {
+			font-size: 1.2rem;
+			margin-top: 0;
+			margin-bottom: 10px;
+			color: #007bff;
+			font-weight: bold;
+			text-shadow: 1px 1px #ccc;
+		}
+		p {
+			margin-top: 0;
+			margin-bottom: 10px;
+			font-size: 0.9rem;
+		}
+		.btn {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 5px;
+			transition: all 0.3s ease;
+		}
+		.btn:hover {
+			background-color: #0056b3;
+			transform: scale(1.1);
+		}
+		@media only screen and (max-width: 600px) {
+			.container {
+				padding: 10px;
+			}
+			li {
+				margin: 10px 0;
+				padding: 10px;
+			}
+			h2 {
+				font-size: 1.2rem;
+			}
+			h3 {
+				font-size: 1rem;
+			}
+			p {
+				font-size: 0.8rem;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Payment Page</h1>
+		<h2>Select a payment method:</h2>
+		<ul>
+			<li>
+				<h3>UPI Payment</h3>
+				<p>Please select your UPI payment option:</p>
+				<ul>
+					<li><a href="UPI.html" target="_blank" class="btn">PhonePe</a></li>
+					<li><a href="UPI.html" target="_blank" class="btn">Google Pay</a></li>
+					<li><a href="UPI.html" target="_blank" class="btn">Paytm</a></li>
+					<li><a href="UPI.html" target="_blank" class="btn">BHIM</a></li>
+				</ul>
+			</li>
+			<li>
+				<h3>Credit/Debit Card</h3>
+				<p>Please select your card type:</p>
+				<ul>
+					<li><a href="card.html" target="_blank" class="btn">Debit Card</a></li>
+					<li><a href="card.html" target="_blank" class="btn">Credit Card</a></li>
+				</ul>
+			</li>
+			<li>
+				<h3>Cash on Delivery</h3>
+				<p>Pay when your product is delivered.</p>
+                <button class="btn"
+                type="submit" onclick="event.preventDefault(); window.location.href='success.html';">Place Order</button> 
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
